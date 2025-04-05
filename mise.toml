@@ -1,0 +1,6 @@
+[tools]
+"aqua:evilmartians/lefthook" = "latest"
+"aqua:go-task/task" = "latest"
+"aqua:nodejs/node" = "22"
+"aqua:pnpm" = "10"
+"npm:@antfu/ni" = "latest"

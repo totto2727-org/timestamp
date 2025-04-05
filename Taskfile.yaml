@@ -1,0 +1,60 @@
+# https://taskfile.dev
+version: "3"
+
+tasks:
+  default:
+    aliases:
+      - list
+    cmd: task --list-all
+
+  setup:
+    cmds:
+      - cmd: lefthook uninstall
+        silent: true
+        ignore_error: true
+      - cmd: lefthook install
+
+  fix:
+    cmds:
+      - na biome check --write
+      - na dprint fmt
+
+  check:
+    deps:
+      - check:biome
+      - check:dprint
+      - check:tsc
+
+  check:biome:
+    cmds:
+      - na biome check
+
+  check:dprint:
+    cmds:
+      - na dprint check
+
+  check:tsc:
+    deps:
+      - cf-typegen
+    cmds:
+      - na tsc
+
+  deploy:
+    cmds:
+      - na wrangler deploy
+
+  dev:mcp:
+    cmds:
+      - na wrangler dev
+
+  dev:inspect:
+    cmds:
+      - npx @modelcontextprotocol/inspector@latest
+
+  start:
+    cmds:
+      - na wrangler dev
+
+  cf-typegen:
+    cmds:
+      - na wrangler types

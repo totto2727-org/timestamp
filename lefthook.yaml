@@ -1,0 +1,5 @@
+pre-commit:
+  commands:
+    fix:
+      stage_fixed: true
+      run: task fix

@@ -1,34 +1,41 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.6.2/schema.json",
-	"organizeImports": {
-		"enabled": true
-	},
-	"files": {
-		"ignore": ["worker-configuration.d.ts"]
-	},
-	"vcs": {
-		"enabled": true,
-		"clientKind": "git",
-		"useIgnoreFile": true
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true,
-			"suspicious": {
-				"noExplicitAny": "off",
-				"noDebugger": "off",
-				"noConsoleLog": "off",
-				"noConfusingVoidType": "off"
-			},
-			"style": {
-				"noNonNullAssertion": "off"
-			}
-		}
-	},
-	"formatter": {
-		"enabled": true,
-		"indentWidth": 4,
-		"lineWidth": 100
-	}
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": {
+    "ignore": ["**/*-lock.json", "worker-configuration.d.ts"],
+    "ignoreUnknown": true
+  },
+  "formatter": {
+    "enabled": true,
+    "lineWidth": 120,
+    "useEditorconfig": true
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noShadowRestrictedNames": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "warn",
+        "noUnusedImports": "warn"
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "vcs": {
+    "clientKind": "git",
+    "defaultBranch": "main",
+    "enabled": true,
+    "root": ".",
+    "useIgnoreFile": true
+  }
 }
