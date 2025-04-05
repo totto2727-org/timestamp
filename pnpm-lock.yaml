@@ -42,6 +42,9 @@ importers:
       marked:
         specifier: ^15.0.7
         version: 15.0.7
+      pnpm:
+        specifier: ^10.7.1
+        version: 10.7.1
       typescript:
         specifier: ^5.5.2
         version: 5.8.3
@@ -2383,6 +2386,11 @@ packages:
   pkce-challenge@4.1.0:
     resolution: {integrity: sha512-ZBmhE1C9LcPoH9XZSdwiPtbPHZROwAnMy+kIFQVrnMCxY4Cudlz3gBOpzilgc0jOgRaiT3sIWfpMomW2ar2orQ==}
     engines: {node: '>=16.20.0'}
+
+  pnpm@10.7.1:
+    resolution: {integrity: sha512-LZLIa3ko3IKE9TSU+0IB+YPaZfD7Tw1Auq+lz2KPox2uPllo8SRm8X336XMQ4w80OmSLrqG5s1BoXa+v/99YCA==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   postcss@8.5.3:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
@@ -5050,6 +5058,8 @@ snapshots:
   picomatch@2.3.1: {}
 
   pkce-challenge@4.1.0: {}
+
+  pnpm@10.7.1: {}
 
   postcss@8.5.3:
     dependencies:
