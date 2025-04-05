@@ -33,7 +33,12 @@
   "assets": {
     "directory": "./static/",
     "binding": "ASSETS"
-  }
+  },
+  "tail_consumers": [
+    {
+      "service": "mcp-tail"
+    }
+  ],
   /**
    * Smart Placement
    * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
