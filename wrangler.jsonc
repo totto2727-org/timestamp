@@ -24,7 +24,7 @@
   "kv_namespaces": [
     {
       "binding": "OAUTH_KV",
-      "id": "60743bcee1db4095a2b13f16df88641e",
+      "id": "60743bcee1db4095a2b13f16df88641e"
     }
   ],
   "observability": {
@@ -38,7 +38,7 @@
     {
       "service": "mcp-tail"
     }
-  ],
+  ]
   /**
    * Smart Placement
    * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
