@@ -1,13 +1,11 @@
 {
-  "name": "frontend",
-  "private": true,
-  "engines": {
-    "node": ">=22.0.0",
-    "pnpm": ">=10.0.0"
-  },
-  "type": "module",
-  "pnpm": {
-    "onlyBuiltDependencies": ["@biomejs/biome", "dprint"]
+  "dependencies": {
+    "@cloudflare/workers-oauth-provider": "^0.0.2",
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "@totto/function": "npm:@jsr/totto__function@^1.2.2",
+    "agents": "^0.0.43",
+    "hono": "^4.7.4",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@biomejs/biome": "latest",
@@ -19,11 +17,14 @@
     "workers-mcp": "^0.1.0-3",
     "wrangler": "^4.7.2"
   },
-  "dependencies": {
-    "@cloudflare/workers-oauth-provider": "^0.0.2",
-    "@modelcontextprotocol/sdk": "^1.7.0",
-    "agents": "^0.0.43",
-    "hono": "^4.7.4",
-    "zod": "^3.24.2"
-  }
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "name": "@totto2727-org/mcp",
+  "pnpm": {
+    "onlyBuiltDependencies": ["@biomejs/biome", "dprint"]
+  },
+  "private": true,
+  "type": "module"
 }
