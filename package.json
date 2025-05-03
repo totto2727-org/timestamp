@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@cloudflare/workers-oauth-provider": "^0.0.2",
+    "@cloudflare/workers-oauth-provider": "^0.0.5",
     "@modelcontextprotocol/sdk": "^1.7.0",
     "@totto/function": "npm:@jsr/totto__function@^1.2.2",
     "agents": "^0.0.43",
